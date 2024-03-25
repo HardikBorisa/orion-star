@@ -494,11 +494,14 @@
             .then(data => {
                 // Handle successful API response here
                 console.log('Success:', data);
+                window.location.replace("../index.html");
                 // You can redirect to a thank you page or show a success message
             })
             .catch(error => {
                 // Handle errors here
                 console.error('Error:', error);
+                window.location.replace("./index.html");
+
                 // Display error message to the user
             });
         });
